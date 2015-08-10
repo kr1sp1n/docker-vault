@@ -5,12 +5,12 @@ Run vault inside linux container.
 ## Build
 
 ```bash
-docker build -t hitfox/docker-vault:latest .
+docker build -t hitfox/vault:latest .
 ```
 
 
 ## Run
 
 ```bash
-docker run -p 8200:8200 --memory-swap=-1 --cap-add=IPC_LOCK --name vault hitfox/docker-vault
+docker run -p 8200:8200 --memory-swap=-1 --cap-add=IPC_LOCK --name vault hitfox/vault
 ```
